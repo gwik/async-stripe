@@ -229,6 +229,7 @@ pub enum BalanceTransactionType {
     IssuingAuthorizationRelease,
     IssuingDispute,
     IssuingTransaction,
+    NetworkCost,
     ObligationOutbound,
     ObligationReversalInbound,
     Payment,
@@ -301,6 +302,7 @@ impl BalanceTransactionType {
             BalanceTransactionType::TransferCancel => "transfer_cancel",
             BalanceTransactionType::TransferFailure => "transfer_failure",
             BalanceTransactionType::TransferRefund => "transfer_refund",
+            BalanceTransactionType::NetworkCost => "network_cost",
         }
     }
 }
